@@ -1,0 +1,45 @@
+---
+title       : Slidify Presentation
+subtitle    : Coursera Data Product Course Project Part 2
+author      : Gopal D Bhatta
+job         : July 21, 2016
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+
+---
+
+Introduction
+
+This is a reproducible pitch presentation using slidify. This part uses mtcars dataset from one of the available datasets in R. 
+Few next slides shows the structure of the variables and sample data.
+
+---
+
+Structure of the dataset
+```{r, echo = TRUE}
+library(datasets)
+str(mtcars)
+```
+
+---
+
+Sample Data
+```{r, echo = TRUE}
+head(mtcars)
+```
+The source codes for ui.R and server.R files are available on github. 
+
+---
+
+The Application
+
+The (mtcars) database is used for the application. The link to the application is https://gopalbhatta.shinyapps.io/data_mtcars/
+
+The app allows to perform interactive data analysis from a set of user specified criteria- 
+
+The selling price of gasoline (US $/gallon) and desired travel distance.
+
